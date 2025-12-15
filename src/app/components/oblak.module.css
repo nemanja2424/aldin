@@ -1,0 +1,44 @@
+.oblak{
+    background-color: #ce1d1e;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    width: 200px;
+    position: relative;
+}
+.krug{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -20px;
+    right: -60px;
+    width: 40px;
+    height: 40px;
+    background-color: #ce1d1e;
+    border-radius: 40%;
+    z-index: 1005;
+}
+
+@keyframes swipeUpDown {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.oblak p {
+  margin: 0;
+  animation: swipeUpDown 1s ease-in;
+}

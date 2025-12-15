@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
+import Oblak from "./components/oblak";
 
 export default function Home() {
   return (
@@ -24,9 +25,22 @@ export default function Home() {
           <Image src={"/hero.jpg"} width={1080} height={1440} className={styles.heroImg} alt="hero" />
         </div>
         <div className={styles.heroKartice}>
+          <div className={styles.card}>
+            
+          </div>
+          <div className={styles.card}>
 
+          </div>
+          <div className={styles.card}>
+
+          </div>
+          <div className={styles.card}>
+sas
+          </div>
         </div>
       </div>
+
+      <Oblak />
     </div>
   );
 }
