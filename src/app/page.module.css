@@ -25,7 +25,7 @@
 .section p{
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.8;
   margin: 20px 0;
   letter-spacing: 0.5px;
@@ -33,7 +33,6 @@
 
 .section p:first-child {
   font-size: 28px;
-  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -165,7 +164,7 @@
 @media (max-width: 767px) {
   .page {
     background: linear-gradient(
-      180deg,
+      to right,
       #050347 0%,
       black 15%,
       black 85%,
