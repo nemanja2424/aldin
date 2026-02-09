@@ -1,0 +1,61 @@
+.logo {
+    font-family: var(--font-oswald) !important;
+    position: relative;
+}
+
+.logoText {
+    display: block;
+    color: #433df3;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.logoBottom {
+    display: flex;
+    align-items: center;
+    bottom: -40px;
+    left: -5px;
+    position: absolute;
+}
+
+.logoLichni {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 5px;
+}
+
+.logoBrend {
+    color: #433df3;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.logoGift {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5px;
+    background-color: #433df3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoIcon{
+    color: #000;
+    font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .logoText, .logoBrend, .logoLichni{
+        font-size: 2rem;
+    }
+    .logoGift{
+        width: 2rem;
+        height: 2rem;
+    }
+    .logoIcon{
+        font-size: 0.5rem;
+    }
+}
