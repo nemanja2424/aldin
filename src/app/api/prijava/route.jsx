@@ -105,15 +105,8 @@ Ime i Prezime: ${ime}
 Zanimanje: ${zanimanje}
 Broj Telefona: ${telefon}`;
 
-    // Pošalji notifikaciju na obe adrese
+    // Pošalji notifikaciju
     const emailPromises = [
-      transporter.sendMail({
-        from: process.env.ZOHO_SMTP_USER,
-        to: KLIJENT_EMAIL_1,
-        subject: `🎯 Novi potencijalni sponzor - ${ime}`,
-        text: adminTekst,
-        html: adminHtmlPoruka
-      }),
       transporter.sendMail({
         from: process.env.ZOHO_SMTP_USER,
         to: KLIJENT_EMAIL_2,

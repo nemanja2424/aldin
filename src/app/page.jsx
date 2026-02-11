@@ -21,7 +21,7 @@ export default function Home() {
           height={919}
           className={styles.heroSlika}
         />
-        <a href="" className={styles.button1}>POVEĆAJ PRATIONCE DANAS</a>
+        <a href="/prijava" className={styles.button1}>POVEĆAJ PRATIONCE DANAS</a>
       </section>
       <hr className={styles.hr} />
       <section className={styles.line} >
@@ -114,7 +114,7 @@ export default function Home() {
 
         
       </section>
-      <a href="" className={styles.button1} >PRIJAVI SE</a>
+      <a href="/prijava" className={styles.button1} >PRIJAVI SE</a>
     </div>
   );
 }
