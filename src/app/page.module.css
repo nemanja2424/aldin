@@ -124,6 +124,190 @@
   }
 }
 
+/* INFLUENCERS SECTION */
+.influencersSection {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.influencersTitle {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+}
+
+.influencersGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  justify-items: center;
+}
+
+.influencerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.influencerCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #433df3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050347;
+}
+
+.influencerCircle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.influencerName {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 120px;
+}
+
+/* BENEFITS SECTION */
+.benefitsSection {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefitsHeading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.benefitsList li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  min-height: 50px;
+  justify-content: center;
+}
+
+.benefitsList i {
+  color: #433df3;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* RESULTS SECTION */
+.resultsSection {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultsHeading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 80%;
+  max-width: 1000px;
+  justify-items: center;
+}
+
+.resultCard {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1.1;
+  padding: 3px;
+  background: linear-gradient(45deg, #433df3, #000, #000, #433df3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #000 0%,
+    black 15%,
+    black 85%,
+    #000 100%
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.cardLabel {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.resultImage {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* TABLET - 768px to 1024px */
 @media (max-width: 1024px) {
   .section {
@@ -157,6 +341,63 @@
 
   .heroSlika {
     margin: 25px 0;
+  }
+
+  .influencersGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .influencerCircle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .influencerName {
+    font-size: 11px;
+  }
+
+  .influencersTitle {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .benefitsHeading {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .benefitsList {
+    width: 85%;
+    gap: 12px;
+  }
+
+  .benefitsList li {
+    font-size: 14px;
+  }
+
+  .benefitsList i {
+    font-size: 18px;
+  }
+
+  .resultsHeading {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .resultsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .resultCard {
+    max-width: 350px;
+  }
+
+  .cardLabel {
+    font-size: 20px;
   }
 }
 
@@ -214,6 +455,87 @@
   .hr {
     margin: 15px 0;
   }
+
+  .influencersGrid {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .influencersGrid::-webkit-scrollbar {
+    height: 4px;
+    display: none;
+  }
+
+  .influencerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  .influencerCircle {
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    flex-shrink: 0;
+  }
+
+  .influencerName {
+    font-size: 11px;
+    min-width: 80px;
+  }
+
+  .influencersTitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .benefitsHeading {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .benefitsList {
+    width: 90%;
+    gap: 12px;
+  }
+
+  .benefitsList li {
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .benefitsList i {
+    font-size: 16px;
+  }
+
+  .resultsHeading {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .resultsGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 95%;
+  }
+
+  .resultCard {
+    max-width: 100%;
+  }
+
+  .cardLabel {
+    font-size: 18px;
+  }
 }
 
 /* MALI MOBILNI - do 480px */
@@ -255,5 +577,88 @@
 
   .hr {
     margin: 10px 0;
+  }
+
+  .influencersGrid {
+    display: flex;
+    gap: 12px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .influencersGrid::-webkit-scrollbar {
+    height: 4px;
+    display: none;
+  }
+
+  .influencerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  .influencerCircle {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    flex-shrink: 0;
+  }
+
+  .influencerName {
+    font-size: 10px;
+    min-width: 60px;
+  }
+
+  .influencersTitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .benefitsHeading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .benefitsList {
+    width: 95%;
+    gap: 10px;
+  }
+
+  .benefitsList li {
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  .benefitsList i {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .resultsHeading {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .resultsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 95%;
+  }
+
+  .resultCard {
+    max-width: 100%;
+    aspect-ratio: 1 / 1.2;
+  }
+
+  .cardLabel {
+    font-size: 16px;
   }
 }

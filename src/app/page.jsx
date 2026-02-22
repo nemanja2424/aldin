@@ -1,7 +1,7 @@
 'use client';
-import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/header";
+import InfluencersCarousel from "./components/influencersCarousel";
 
 export default function Home() {
   return (
@@ -14,13 +14,7 @@ export default function Home() {
         <p>
           KONTAKTIRAJ NAS I SAZNAJ KAKO SA SISTEMOM KOJI 100% RADI.
         </p>
-        <Image
-          src="/profile.png"
-          alt="LOGO"
-          width={1751}
-          height={919}
-          className={styles.heroSlika}
-        />
+        <InfluencersCarousel />
         <a href="/prijava" className={styles.button1}>POVEĆAJ PRATIONCE DANAS</a>
       </section>
       <hr className={styles.hr} />
@@ -69,22 +63,6 @@ export default function Home() {
           Bez pravog hajpa, algoritam radi protiv tebe.
         </p>
 
-        <p>
-          Danas ne pobjeđuju najbolji proizvodi.
-        </p>
-
-        <p>
-          Pobjeđuju oni koji znaju kako da privuku masu i zadrže fokus publike.
-        </p>
-
-        <p>
-          Ako ne znaš kako da napraviš kampanju koju ljudi dijele, komentarišu i pamte –
-          ostaješ neprimijećen.
-        </p>
-
-        <p>
-          Tvoj brend, tvoje nagrade i tvoj potencijal ostaju neiskorišteni.
-        </p>
 
         <p>
           <strong>ZVUČI POZNATO?</strong>
@@ -92,10 +70,6 @@ export default function Home() {
 
         <p>
           A ako ništa ne promijeniš…
-        </p>
-
-        <p>
-          Vrijeme prolazi, a ti gledaš sa strane.
         </p>
 
         <p>
@@ -111,10 +85,40 @@ export default function Home() {
           Zbog toga je tu – <strong>SPORTOLOG GIVEAWAY.</strong>
         </p>
 
-
         
       </section>
-      <a href="/prijava" className={styles.button1} >PRIJAVI SE</a>
+
+      <section className={styles.benefitsSection}>
+        <h3 className={styles.benefitsHeading}>ŠTA SVE DOBIJAŠ</h3>
+        <ul className={styles.benefitsList}>
+          <li><i className="fa-solid fa-check-double"></i> Ciljanu promociju pred ogromnom publikom koja već prati giveawayeve</li>
+          <li><i className="fa-solid fa-check-double"></i> Brzi rast prepoznatljivosti brenda kroz viralni format nagradne igre</li>
+          <li><i className="fa-solid fa-check-double"></i> Povećanje broja pratilaca i interakcija na tvom Instagram profilu</li>
+          <li><i className="fa-solid fa-check-double"></i> Direktan dolazak potencijalnih kupaca na tvoj profil ili web stranicu</li>
+          <li><i className="fa-solid fa-check-double"></i> Profesionalnu organizaciju i vođenje cijele kampanje bez stresa</li>
+          <li><i className="fa-solid fa-check-double"></i> Realne rezultate – engagement, reach i prodajni potencijal</li>
+        </ul>
+      </section>
+
+      <section className={styles.resultsSection}>
+        <h3 className={styles.resultsHeading}>NAŠI REZULTATI</h3>
+        <div className={styles.resultsGrid}>
+          <div className={styles.resultCard}>
+            <div className={styles.cardContent}>
+              <h4 className={styles.cardLabel}>PRIJE</h4>
+              <img src="/results/prije.jpg" alt="Prije" className={styles.resultImage} />
+            </div>
+          </div>
+          <div className={styles.resultCard}>
+            <div className={styles.cardContent}>
+              <h4 className={styles.cardLabel}>POSLIJE</h4>
+              <img src="/results/poslije.jpg" alt="Poslije" className={styles.resultImage} />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <a href="/prijava" className={styles.button1} >ISKORISTI FINALNI POPUST</a>
     </div>
   );
 }
