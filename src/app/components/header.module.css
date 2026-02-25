@@ -55,6 +55,7 @@
     background: rgba(0, 0, 0, 0.603);
     height: 185px;
     padding-top: 10px;
+    margin-top: 20px;
 }
 .hrFooter {
     border: none;           /* uklanja default border */
