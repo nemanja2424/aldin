@@ -1,6 +1,7 @@
 'use client';
 import styles from "./page.module.css";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import InfluencersCarousel from "./components/influencersCarousel";
 
 export default function Home() {
@@ -119,6 +120,7 @@ export default function Home() {
       </section>
       
       <a href="/prijava" className={styles.button1} >ISKORISTI FINALNI POPUST</a>
+      <Footer />
     </div>
   );
 }

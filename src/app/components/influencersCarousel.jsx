@@ -7,20 +7,20 @@ export default function InfluencersCarousel() {
   const [isMobile, setIsMobile] = useState(false);
   
   const influencers = [
-    { name: 'Ilda Humić', image: '/influencers/ilda.jpg' },
-    { name: 'Nezira Muhić', image: '/influencers/nezira.jpg' },
+    { name: 'Ilda Humić', image: '/influencers/Ilda.png' },
+    { name: 'Nezira Muhović', image: '/influencers/nezira.jfif' },
     { name: 'Aldin Hasić', image: '/influencers/aldin.jpg' },
-    { name: 'Amar Velagić', image: '/influencers/amar.jpg' },
-    { name: 'Ajla Musić', image: '/influencers/ajla.jpg' },
+    { name: 'Amar Velagić', image: '/influencers/amar.webp' },
+    { name: 'Ajla Musić', image: '/influencers/ajla.jfif' },
     { name: 'Naida Bojnakova', image: '/influencers/naida.jpg' },
     { name: 'Namik Djulić (Nuni)', image: '/influencers/nuni.jpg' },
     { name: 'Veki', image: '/influencers/veki.jpg' },
-    { name: 'Biljana Petrović', image: '/influencers/biljana.jpg' },
-    { name: 'Vanja Veljić', image: '/influencers/vanja.jpg' },
+    { name: 'Biljana Petrović', image: '/influencers/biljana.jfif' },
+    { name: 'Vanja Veljić', image: '/influencers/Vanja.png' },
     { name: 'Teodora Popovska', image: '/influencers/teodora.jpg' },
-    { name: 'Ela Jerković', image: '/influencers/ela.jpg' },
-    { name: 'Marija Ignjatović', image: '/influencers/marija.jpg' },
-    { name: 'Luna Djogani', image: '/influencers/luna.jpg' },
+    { name: 'Ela Jerković', image: '/influencers/ela.jpeg' },
+    { name: 'Marija Ignjatović', image: '/influencers/marija.png' },
+    { name: 'Luna Djogani', image: '/influencers/luna.png' },
     { name: 'Tijana Milentijević', image: '/influencers/tijana.jpg' },
   ];
 
