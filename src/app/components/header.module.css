@@ -45,7 +45,7 @@
 
 /*FOOTER*/
 
-.header{
+.footer{
     position: relative;
     min-width: 100%;
     display: flex;
@@ -56,7 +56,7 @@
     height: 185px;
     padding-top: 10px;
 }
-.hr {
+.hrFooter {
     border: none;           /* uklanja default border */
     height: 2px;            /* debljina linije */
     width: 100%;
@@ -70,4 +70,16 @@
     margin: 0;              /* po želji */
     position: absolute;
     top: 15px;
+}
+.footer img{
+    width: auto !important;
+    height: 70% !important;
+}
+@media (max-width: 1024px) {
+    .footer{
+        height: 110px;
+    }
+    .footer img{
+        height: 70% !important;
+    }
 }

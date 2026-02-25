@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <header className={styles.header}>
-        <hr className={styles.hr} />
+    <header className={styles.footer}>
+        <hr className={styles.hrFooter} />
         <Image src="/logo.png" alt="logo" width={1701} height={444} />
     </header>
   );
